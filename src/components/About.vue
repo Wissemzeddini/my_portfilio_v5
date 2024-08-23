@@ -8,20 +8,7 @@
       <div class="left-about">
         <h4>Information About me</h4>
         <p>{{ aboutText }}</p>
-        <div class="btn-con">
-          <a
-            href="files/my_cv_01.pdf"
-            class="main-btn"
-            download="wissem_zeddini_cv"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="btn-text">Download CV</span>
-            <span class="btn-icon">
-              <i class="fas fa-download"></i>
-            </span>
-          </a>
-        </div>
+        <CV />
       </div>
       <div class="right-about">
         <div class="about-item" v-for="stat in stats" :key="stat.title">
@@ -62,18 +49,16 @@
   </template>
   
   <script lang="ts" setup>
+  import CV from '@/components/DownloadCV.vue'
+
   // About text
-  const aboutText = `My name is Wissem Zeddini, and I reside in Beja, Tunisia.
-  Currently, I am employed as a Power Platform developer at ZMwareLab.
-  My responsibilities mainly involve crafting Power Platform solutions,
-  which includes the development of chatbots using Copilot Studio,
-  Power Automate flows, as well as creating Canvas/Model-Driven app applications and AI Builder Models.`;
+  const aboutText = `My name is Wissem Zeddini, and I live in Beja, Tunisia. I am currently a Developer specializing in Node.js applications using Fastify and TypeScript. I also work with Vue 3 for frontend development. My role includes managing AWS services such as EC2, S3, and RDS, as well as handling networking, CI/CD pipelines, and overall service optimization.`;
   
   // Stats information
   const stats = [
     { value: "7+", title: "Projects Completed" },
     { value: "3+", title: "Years of experience" },
-    { value: "10+", title: "Technology Mastered" },
+    { value: "20+", title: "Technology Mastered" },
     { value: "10+", title: "Certification" },
   ];
   
@@ -91,7 +76,7 @@
     { name: "Rest API", proficiency: 80 },
     { name: "GraphQL API", proficiency: 70 },
     { name: "HTML/CSS", proficiency: 90 },
-    { name: "Bootstrap", proficiency: 80 },
+    { name: "Bootstrap/ Tailwind css", proficiency: 80 },
     { name: "Github action", proficiency: 60 },
     { name: "Jenkins", proficiency: 70 },
     { name: "Terraform", proficiency: 50 },
@@ -101,15 +86,24 @@
     { name: "Cloud AWS/Azure", proficiency: 80 },
     { name: "Shopify API", proficiency: 80 },
     { name: "Power BI", proficiency: 80 },
-    { name: "Mysql/SQL server databases", proficiency: 75 },
+    { name: "Mysql/SQL server databases/Postgress", proficiency: 75 },
+    { name: "Fastify", proficiency: 65},
+    { name: "TypeScript", proficiency: 60},
+    { name: "Vue js", proficiency: 75},
   ];
   
   // Timeline information
   const timelines = [
     {
-      duration: "2024 - present",
+      duration: "2024 - Now",
+      title: "Frontend Developer",
+      company: "Rimans Solution",
+      description: `My responsibilities primarily involve developing route optimization software to address delivery and pickup challenges. I utilize Node.js technologies, including Fastify and Prisma, for backend development, while leveraging Vue 3, TypeScript, and Tailwind CSS for the frontend.`,
+    },
+    {
+      duration: "2023 - 2024",
       title: "Power Platform Developer",
-      company: "ZMWARELAB",
+      company: "Rimans Solution",
       description: `My responsibilities mainly involve crafting Power Platform solutions,
                     which includes the development of chatbots using Copilot Studio,
                     Power Automate flows, as well as creating Canvas/Model-Driven app applications and AI Builder Models.`,

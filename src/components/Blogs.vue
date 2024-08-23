@@ -20,10 +20,11 @@
   
   <script lang="ts" setup>
   // Import images
-  import img1 from '@/assets/img/port6.jpg';
-  import img2 from '@/assets/img/blog1.jpg';
+  import img1 from '@/assets/img/newswebsite.webp';
+  import img2 from '@/assets/img/compare-price.jpg';
   import img3 from '@/assets/img/blog2.jpg';
   import img4 from '@/assets/img/blog3.jpg';
+  import img5 from '@/assets/img/mobile.jpg';
   
   // Local blog data
   const blogs = [
@@ -50,6 +51,12 @@
       title: "Y Download",
       description:
         "A tool that can download videos from different sources, especially YouTube.",
+    },
+    {
+      img: img5,
+      title: "RouteGenius (app.routegenius.net)",
+      description:
+      "web-based software designed to optimize pick-up and delivery processes using advanced algorithms. This involves creating solutions that streamline route planning and enhance efficiency in logistics operations."
     },
   ];
   </script>

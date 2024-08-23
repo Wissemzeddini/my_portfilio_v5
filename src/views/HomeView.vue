@@ -39,6 +39,9 @@
     <div class="theme-btn" @click="toggleTheme">
         <i class="fas fa-adjust"></i>
     </div>
+    <div class="lang-btn">
+        <i class="fa fa-globe"></i>
+    </div>
 </body>
 </template>
 
