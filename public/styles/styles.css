@@ -173,10 +173,10 @@ section {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease-in-out;
 }
-.theme-btn:active {
+.lang-btn:active {
   transform: translateY(-3px);
 }
-.theme-btn i {
+.lang-btn i {
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
@@ -1025,3 +1025,43 @@ border: 1px solid var(--color-secondary);
 color: var(--color-secondary);
 transition: 1s ease;
 }
+/* Add this to your assets/css/style.css file */
+
+/* Add this to your assets/css/style.css file */
+
+.lang-container {
+  position: fixed; /* Changed to fixed to stay at the same spot on the screen */
+  top: 7%;
+  right: 9%;
+  z-index: 9999; /* Ensure it’s on top of other elements */
+}
+
+.lang-dropdown {
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 9999; /* Ensure it’s above other elements */
+}
+
+.lang-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lang-dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--color-grey-2);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.lang-dropdown li:hover {
+  background-color: var(--color-primary);
+}
+
+

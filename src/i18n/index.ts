@@ -11,8 +11,8 @@ const messages = {
 
 const i18n = createI18n({
   legacy: false, // Use Composition API mode
-  locale: 'fr', // Default locale
-  fallbackLocale: 'fr', // Fallback locale
+  locale: 'en', // Default locale
+  fallbackLocale: 'en', // Fallback locale
   messages
 });
 

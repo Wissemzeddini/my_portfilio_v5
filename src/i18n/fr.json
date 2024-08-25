@@ -3,5 +3,64 @@
     "myname":"Wissem Zeddini",
     "jobtitle": "Développeur & Devops.",
     "description": "Je suis Développeur & Devops, polyvalent, ouvert d'esprit, sociable, dynamique, organisé et motivé. Je maîtrise les divers outils DevOps, le développement et les technologies nécessaires pour un Data scientist. Je suis également expert en développement Python.",
-    "download_cv": "Télécharger le CV"
+    "download_cv": "Télécharger le CV",
+    "about": {
+    "title": "À propos",
+    "subtitle": "de moi",
+    "bgText": "mes statistiques",
+    "informationTitle": "Informations sur moi",
+    "description": "Mon nom est Wissem Zeddini, et je vis à Beja, en Tunisie. Je suis actuellement développeur spécialisé dans les applications Node.js utilisant Fastify et TypeScript. Je travaille aussi avec Vue 3 pour le développement de l’interface. Mon rôle comprend la gestion des services AWS tels que EC2, S3 et RDS, ainsi que le traitement du réseautage, des pipelines CI/CD et de l’optimisation globale des services.",
+    "stats": {
+      "projectsCompleted": "Projets complétés",
+      "yearsOfExperience": "Années d'expérience",
+      "technologyMastered": "Technologies maîtrisées",
+      "certifications": "Certifications"
+    },
+    "skillsTitle": "Mes compétences",
+    "timelineTitle": "Mon parcours",
+    "timeline": {
+      "frontendDeveloper": "Développeur Frontend",
+      "timelineDescription1": "Mes responsabilités consistent principalement à développer un logiciel d’optimisation des itinéraires pour relever les défis de livraison et de ramassage. J’utilise les technologies Node.js, y compris Fastify et Prisma, pour le développement du backend, tout en tirant parti de Vue 3, TypeScript et Tailwind CSS pour le frontend.",
+      "powerPlatformDeveloper": "Développeur de la plateforme Power",
+      "timelineDescription2":"Mes responsabilités consistent principalement à créer des solutions de plateforme Power, ce qui comprend le développement de chatbots en utilisant Copilot Studio, les flux Power Automate, ainsi que la création d’applications Canvas/Model-Driven et de modèles AI Builder.",
+      "ciTester":"Testeur CI & Automatisation",
+      "timelineDescription3":"Assurer la qualité, résoudre les tests échoués, créer des cas de test en utilisant Python, et construire des pipelines Jenkins pour le département HYPERSIM.",
+      "dataAnalyst":"Analyste de Données",
+      "timelineDescription4":"Construire un système pour recueillir automatiquement des données de divers magasins Shopify et Amazon Seller Central, permettant aux utilisateurs de générer des rapports personnalisés à la demande sur les performances de Shopify et des informations complètes sur les ventes en utilisant Python et Power BI.",
+      "devOps":"DevOps",
+      "timelineDescription5":"Gérer les services AWS tels que EC2 et RDS, ainsi que le DNS. Concevoir une solution cloud pour déployer des applications plus grandes, en abordant des aspects tels que la gestion du stockage, l'optimisation des performances et les mesures de sécurité."
+    }
+  },
+  "myWorks": "Mes",
+  "works": "Travaux",
+  "workDescription": "Voici quelques-uns de mes travaux réalisés dans divers langages de programmation.",
+  "projects": {
+    "elWess": "EL-wess.tn (site web)",
+    "elWessDesc": "Une plateforme d'informations multi-sources : cela souligne le fait que le site propose des nouvelles provenant d'une variété de sources.",
+    "piCompare": "Pi-compare",
+    "piCompareDesc": "Moteur de comparaison de prix sur un site de e-commerce tunisien basé sur un modèle AI, qui propose la meilleure offre pour chaque produit.",
+    "moyMgmt": "MOYMGMT",
+    "moyMgmtDesc": "Gestion de l'argent est un site web qui fournit un moyen facile de gérer les revenus et les dépenses, avec une fonctionnalité AI pour prévoir les futures dépenses et revenus en fonction des données historiques.",
+    "yDownload": "Y Download",
+    "yDownloadDesc": "Un outil qui permet de télécharger des vidéos à partir de différentes sources, en particulier YouTube.",
+    "routeGenius": "RouteGenius (app.routegenius.net)",
+    "routeGeniusDesc": "Logiciel en ligne conçu pour optimiser les processus de ramassage et de livraison en utilisant des algorithmes avancés. Cela implique la création de solutions qui simplifient la planification des itinéraires et améliorent l'efficacité des opérations logistiques."
+  },
+  "contact": {
+    "mainTitle": "Contactez",
+    "subtitle": "Moi",
+    "bgText": "Contact",
+    "contactMeHere": "Contactez-moi ici",
+    "officialContact": "Ceci est mon contact officiel.",
+    "location": "Lieu",
+    "email": "Email",
+    "education": "Éducation",
+    "mobileNumber": "Numéro de téléphone",
+    "languages": "Langues",
+    "namePlaceholder": "VOTRE NOM",
+    "emailPlaceholder": "VOTRE EMAIL",
+    "subjectPlaceholder": "ENTREZ LE SUJET",
+    "messagePlaceholder": "Message ici...",
+    "sendButton": "Envoyer"
+  }
 }

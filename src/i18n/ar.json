@@ -3,5 +3,64 @@
     "myname":"وسام زديني",
     "jobtitle": "مطور و Devops.",
     "description": "أنا مطور و Devops، متعدد المهارات، منفتح الذهن، اجتماعي، ديناميكي، منظم ومتحفز. أتمتع بإتقان الأدوات المختلفة لـ DevOps، والتطوير والتقنيات اللازمة لعالم البيانات. كما أنني خبير في تطوير Python.",
-    "download_cv": "تحميل السيرة الذاتية"
+    "download_cv": "تحميل السيرة الذاتية",
+    "about": {
+    "title": "عن",
+    "subtitle": "نفسي",
+    "bgText": "إحصائياتي",
+    "informationTitle": "معلومات عني",
+    "description": "اسمي وسام زديني، وأنا أعيش في باجة، تونس. أنا حاليًا مطور متخصص في تطبيقات Node.js باستخدام Fastify و TypeScript. أنا أعمل أيضًا مع Vue 3 لتطوير الواجهة. يشمل دوري إدارة خدمات AWS مثل EC2 و S3 و RDS، بالإضافة إلى التعامل مع الشبكات وخطوط أنابيب CI/CD وتحسين الخدمة بشكل عام.",
+    "stats": {
+      "projectsCompleted": "المشاريع المكتملة",
+      "yearsOfExperience": "سنوات الخبرة",
+      "technologyMastered": "التقنيات المتقنة",
+      "certifications": "الشهادات"
+    },
+    "skillsTitle": "مهاراتي",
+    "timelineTitle": "الخط الزمني الخاص بي",
+    "timeline": {
+      "frontendDeveloper": "مطور الواجهة الأمامية",
+      "timelineDescription1": "تتضمن مسؤولياتي في المقام الأول تطوير برنامج تحسين المسار لمواجهة تحديات التسليم والاستلام. أستخدم تقنيات Node.js، بما في ذلك Fastify و Prisma، لتطوير الواجهة الخلفية، مع الاستفادة من Vue 3 و TypeScript و Tailwind CSS في المقدمة.",
+      "powerPlatformDeveloper": "Power Platform Developer",
+      "timelineDescription2":"تشمل مسؤولياتي بشكل أساسي صياغة حلول Power Platform، والتي تتضمن تطوير برامج المحادثة باستخدام Copilot Studio، وتدفقات Power Automate، بالإضافة إلى إنشاء تطبيقات Canvas/Model-Driven ونماذج AI Builder.",
+      "ciTester": "CI Tester & Automation",
+      "timelineDescription3":"ضمان الجودة، استكشاف الأخطاء في الاختبارات الفاشلة، إنشاء حالات اختبار باستخدام Python، وبناء خطوط أنابيب Jenkins لقسم HYPERSIM.",
+      "dataAnalyst":"محلل بيانات",
+      "timelineDescription4":"بناء نظام لجمع البيانات تلقائيًا من مختلف متاجر Shopify وAmazon Seller Central، مما يمكن المستخدمين من إنشاء تقارير مخصصة عند الطلب لأداء Shopify وإحصاءات المبيعات الشاملة باستخدام Python وPower BI.",
+      "devOps":"DevOps",
+      "timelineDescription5":"إدارة خدمات AWS مثل EC2 وRDS، بالإضافة إلى التعامل مع DNS. تطوير حل سحابي لنشر التطبيقات الكبيرة، معالجة جوانب مثل إدارة التخزين، تحسين الأداء، وتدابير الأمان."
+    }
+  },
+  "myWorks": "أعمالي",
+  "works": "",
+  "workDescription": "إليك بعض أعمالي التي قمت بها باستخدام لغات برمجة مختلفة.",
+  "projects": {
+    "elWess": "EL-wess.tn (موقع الكتروني)",
+    "elWessDesc": "منصة إخبارية متعددة المصادر: تؤكد هذه الحقيقة على أن الموقع يقدم أخبارًا من مجموعة متنوعة من المصادر.",
+    "piCompare": "Pi-compare",
+    "piCompareDesc": "محرك مقارنة الأسعار على موقع التجارة الإلكترونية التونسي القائم على نموذج AI، والذي يوفر أفضل صفقة لكل منتج.",
+    "moyMgmt": "MOYMGMT",
+    "moyMgmtDesc": "إدارة المال هو موقع يقدم طريقة سهلة لإدارة الدخل والمصروفات، مع ميزة الذكاء الاصطناعي للتنبؤ بالمصروفات والدخل المستقبلي بناءً على البيانات التاريخية.",
+    "yDownload": "Y Download",
+    "yDownloadDesc": "أداة تتيح تنزيل الفيديوهات من مصادر مختلفة، وخاصةً YouTube.",
+    "routeGenius": "RouteGenius (app.routegenius.net)",
+    "routeGeniusDesc": "برنامج عبر الإنترنت مصمم لتحسين عمليات الاستلام والتسليم باستخدام الخوارزميات المتقدمة. يتضمن ذلك إنشاء حلول تسهل تخطيط المسارات وتعزز الكفاءة في العمليات اللوجستية."
+  },
+  "contact": {
+    "mainTitle": "اتصل",
+    "subtitle": "بي",
+    "bgText": "اتصل",
+    "contactMeHere": "اتصل بي هنا",
+    "officialContact": "هذا هو الاتصال الرسمي الخاص بي.",
+    "location": "الموقع",
+    "email": "البريد الإلكتروني",
+    "education": "التعليم",
+    "mobileNumber": "رقم الهاتف المحمول",
+    "languages": "اللغات",
+    "namePlaceholder": "اسمك",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "subjectPlaceholder": "ادخل الموضوع",
+    "messagePlaceholder": "اكتب رسالتك هنا...",
+    "sendButton": "إرسال"
+  }
 }

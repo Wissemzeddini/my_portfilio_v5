@@ -1,26 +1,27 @@
 <template>
-    <div class="main-title">
-      <h2>
-        About <span>me</span><span class="bg-text">my stats</span>
-      </h2>
+  <div class="main-title">
+    <h2>
+      {{ $t('about.title') }} <span>{{ $t('about.subtitle') }}</span>
+      <span class="bg-text">{{ $t('about.bgText') }}</span>
+    </h2>
+  </div>
+  <div class="about-container">
+    <div class="left-about">
+      <h4>{{ $t('about.informationTitle') }}</h4>
+      <p>{{ $t('about.description') }}</p>
+      <CV />
     </div>
-    <div class="about-container">
-      <div class="left-about">
-        <h4>Information About me</h4>
-        <p>{{ aboutText }}</p>
-        <CV />
-      </div>
-      <div class="right-about">
-        <div class="about-item" v-for="stat in stats" :key="stat.title">
-          <div class="abt-text">
-            <p class="large-text">{{ stat.value }}</p>
-            <p class="small-text">{{ stat.title }}</p>
-          </div>
+    <div class="right-about">
+      <div class="about-item" v-for="stat in stats" :key="stat.title">
+        <div class="abt-text">
+          <p class="large-text">{{ stat.value }}</p>
+          <p class="small-text">{{ $t(`about.stats.${stat.title}`) }}</p>
         </div>
       </div>
     </div>
-    <div class="about-stats">
-      <h4 class="stat-title">My Skills</h4>
+  </div>
+  <div class="about-stats">
+      <h4 class="stat-title">{{ $t('about.skillsTitle') }}</h4>
       <div class="progress-bars">
         <div class="progress-bar" v-for="skill in skills" :key="skill.name">
           <p class="prog-title">{{ skill.name }}</p>
@@ -33,34 +34,36 @@
         </div>
       </div>
     </div>
-    <h4 class="stat-title">My Timeline</h4>
-    <div class="timeline">
-      <div class="timeline-item" v-for="timeline in timelines" :key="timeline.duration">
-        <div class="tl-icon">
-          <i class="fas fa-briefcase"></i>
-        </div>
-        <p class="tl-duration">{{ timeline.duration }}</p>
-        <h5>
-          {{ timeline.title }}<span> - {{ timeline.company }}</span>
-        </h5>
-        <p>{{ timeline.description }}</p>
+  <h4 class="stat-title">{{ $t('about.timelineTitle') }}</h4>
+  <div class="timeline">
+    <div class="timeline-item" v-for="timeline in timelines" :key="timeline.duration">
+      <div class="tl-icon">
+        <i class="fas fa-briefcase"></i>
       </div>
+      <p class="tl-duration">{{ timeline.duration }}</p>
+      <h5>
+        {{ $t(`about.timeline.${timeline.title}`) }}<span> - {{ timeline.company }}</span>
+      </h5>
+      <p>{{ $t(`about.timeline.${timeline.description}`) }}</p>
     </div>
-  </template>
+  </div>
+</template>
   
-  <script lang="ts" setup>
+<script lang="ts" setup>
   import CV from '@/components/DownloadCV.vue'
+  import { useI18n } from 'vue-i18n';
 
+  const { t } = useI18n();
   // About text
-  const aboutText = `My name is Wissem Zeddini, and I live in Beja, Tunisia. I am currently a Developer specializing in Node.js applications using Fastify and TypeScript. I also work with Vue 3 for frontend development. My role includes managing AWS services such as EC2, S3, and RDS, as well as handling networking, CI/CD pipelines, and overall service optimization.`;
-  
+  const aboutText = t('about.description');
+
   // Stats information
   const stats = [
-    { value: "7+", title: "Projects Completed" },
-    { value: "3+", title: "Years of experience" },
-    { value: "20+", title: "Technology Mastered" },
-    { value: "10+", title: "Certification" },
-  ];
+  { value: "7+", title: "projectsCompleted" },
+  { value: "3+", title: "yearsOfExperience" },
+  { value: "20+", title: "technologyMastered" },
+  { value: "10+", title: "certifications" },
+ ];
   
   // Skills information
   const skills = [
@@ -96,40 +99,33 @@
   const timelines = [
     {
       duration: "2024 - Now",
-      title: "Frontend Developer",
+      title: "frontendDeveloper",
       company: "Rimans Solution",
-      description: `My responsibilities primarily involve developing route optimization software to address delivery and pickup challenges. I utilize Node.js technologies, including Fastify and Prisma, for backend development, while leveraging Vue 3, TypeScript, and Tailwind CSS for the frontend.`,
+      description: "timelineDescription1",
     },
     {
       duration: "2023 - 2024",
-      title: "Power Platform Developer",
+      title: "powerPlatformDeveloper",
       company: "Rimans Solution",
-      description: `My responsibilities mainly involve crafting Power Platform solutions,
-                    which includes the development of chatbots using Copilot Studio,
-                    Power Automate flows, as well as creating Canvas/Model-Driven app applications and AI Builder Models.`,
+      description: "timelineDescription2",
     },
     {
       duration: "2023",
-      title: "CI Tester & Automation",
+      title: "ciTester",
       company: "OPAL-RT/Rimans Solution",
-      description: `Ensure quality, troubleshoot failed tests, create test cases using Python, 
-                    and build Jenkins pipelines for the HYPERSIM department.`,
+      description: "timelineDescription3",
     },
     {
       duration: "2022",
-      title: "Data Analyst",
+      title: "dataAnalyst",
       company: "ZMWARELAB",
-      description: `Build a system to automatically gather data from various Shopify stores and Amazon Seller Central,
-                    empowering users to generate bespoke reports on demand for Shopify performance and comprehensive sales insights
-                    using Python and Power BI.`,
+      description: "timelineDescription4",
     },
     {
       duration: "2021",
-      title: "DevOps",
+      title: "devOps",
       company: "ZMWARELAB",
-      description: `Administer AWS services like EC2 and RDS, along with handling DNS. 
-                    Devise a cloud-based solution for deploying larger applications, addressing aspects such as storage management,
-                    performance optimization, and security measures.`,
+      description: "timelineDescription5",
     },
   ];
   </script>

@@ -3,6 +3,65 @@
     "myname":"Wissem Zeddini",
     "jobtitle":"A Developer & Devops.",
     "description":"I'm a Developer & Devops, Versatile, open-minded, sociable, dynamic, organized and motivated, I master the various tools of DevOps, development and the technologies necessary for a Data scientist. also i m expert in python development.",
-    "download_cv":"Download CV"
+    "download_cv":"Download CV",
+    "about": {
+    "title": "About",
+    "subtitle": "me",
+    "bgText": "my stats",
+    "informationTitle": "Information About me",
+    "description": "My name is Wissem Zeddini, and I live in Beja, Tunisia. I am currently a Developer specializing in Node.js applications using Fastify and TypeScript. I also work with Vue 3 for frontend development. My role includes managing AWS services such as EC2, S3, and RDS, as well as handling networking, CI/CD pipelines, and overall service optimization.",
+    "stats": {
+      "projectsCompleted": "Projects Completed",
+      "yearsOfExperience": "Years of experience",
+      "technologyMastered": "Technology Mastered",
+      "certifications": "Certifications"
+    },
+    "skillsTitle": "My Skills",
+    "timelineTitle": "My Timeline",
+    "timeline": {
+      "frontendDeveloper": "Frontend Developer",
+      "timelineDescription1": "My responsibilities primarily involve developing route optimization software to address delivery and pickup challenges. I utilize Node.js technologies, including Fastify and Prisma, for backend development, while leveraging Vue 3, TypeScript, and Tailwind CSS for the frontend.",
+      "powerPlatformDeveloper":"Power Platform Developer",
+      "timelineDescription2":"My responsibilities mainly involve crafting Power Platform solutions, which includes the development of chatbots using Copilot Studio, Power Automate flows, as well as creating Canvas/Model-Driven app applications and AI Builder Models.",
+      "ciTester": "CI Tester & Automation",
+      "timelineDescription3":"Ensure quality, troubleshoot failed tests, create test cases using Python, and build Jenkins pipelines for the HYPERSIM department.",
+      "dataAnalyst":"Data Analyst",
+      "timelineDescription4":"Build a system to automatically gather data from various Shopify stores and Amazon Seller Central, empowering users to generate bespoke reports on demand for Shopify performance and comprehensive sales insights using Python and Power BI.",
+      "devOps":"DevOps",
+      "timelineDescription5":"Administer AWS services like EC2 and RDS, along with handling DNS. Devise a cloud-based solution for deploying larger applications, addressing aspects such as storage management, performance optimization, and security measures."
+    }
+  },
+  "myWorks": "My",
+  "works": "Works",
+  "workDescription": "Here is some of my work that I've done in various programming languages.",
+  "projects": {
+    "elWess": "EL-wess.tn (website)",
+    "elWessDesc": "A multi-source news platform: This emphasizes the fact that the website offers news from a diverse range of outlets.",
+    "piCompare": "Pi-compare",
+    "piCompareDesc": "Price comparison engine on a Tunisia e-commerce website based on AI model, that provide the best deal for each product.",
+    "moyMgmt": "MOYMGMT",
+    "moyMgmtDesc": "Money management is a website that provides an easy way to manage income and expenses, with an AI feature to forecast future expenses and income based on historical data.",
+    "yDownload": "Y Download",
+    "yDownloadDesc": "A tool that can download videos from different sources, especially YouTube.",
+    "routeGenius": "RouteGenius (app.routegenius.net)",
+    "routeGeniusDesc": "Web-based software designed to optimize pick-up and delivery processes using advanced algorithms. This involves creating solutions that streamline route planning and enhance efficiency in logistics operations."
+  },
+  "contact": {
+    "mainTitle": "Contact",
+    "subtitle": "Me",
+    "bgText": "Contact",
+    "contactMeHere": "Contact me here",
+    "officialContact": "This is my official contact.",
+    "location": "Location",
+    "email": "Email",
+    "education": "Education",
+    "mobileNumber": "Mobile Number",
+    "languages": "Languages",
+    "namePlaceholder": "YOUR NAME",
+    "emailPlaceholder": "YOUR EMAIL",
+    "subjectPlaceholder": "ENTER SUBJECT",
+    "messagePlaceholder": "Message Here...",
+    "sendButton": "Send"
+  }
 }
   
