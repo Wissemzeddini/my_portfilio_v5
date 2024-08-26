@@ -1,5 +1,5 @@
 <template>
-    <div class="btn-con">
+    <div class="btn-con" >
       <a 
       :href="cv_file" 
       class="main-btn" 
@@ -14,8 +14,15 @@
   </template>
   
   <script lang="ts" setup>
+  import { ref, computed } from 'vue'
+  import { useI18n } from 'vue-i18n';
+
+  const { locale } = useI18n();
   const cv_file = process.env.VUE_APP_CV_FILE
-  console.log("cv files", cv_file);
+
+  const isRTL = computed(() => {
+  return locale.value === 'ar'; // 'ar' is the code for Arabic
+  });
   </script>
   
   <style>

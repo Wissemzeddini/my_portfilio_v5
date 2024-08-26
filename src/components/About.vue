@@ -6,7 +6,7 @@
     </h2>
   </div>
   <div class="about-container">
-    <div class="left-about">
+    <div class="left-about" :dir="isRTL ? 'rtl' : 'ltr'">
       <h4>{{ $t('about.informationTitle') }}</h4>
       <p>{{ $t('about.description') }}</p>
       <CV />
@@ -35,7 +35,7 @@
       </div>
     </div>
   <h4 class="stat-title">{{ $t('about.timelineTitle') }}</h4>
-  <div class="timeline">
+  <div class="timeline" :dir="isRTL ? 'rtl' : 'ltr'">
     <div class="timeline-item" v-for="timeline in timelines" :key="timeline.duration">
       <div class="tl-icon">
         <i class="fas fa-briefcase"></i>
@@ -51,9 +51,15 @@
   
 <script lang="ts" setup>
   import CV from '@/components/DownloadCV.vue'
+  import { ref, computed } from 'vue'
   import { useI18n } from 'vue-i18n';
 
+  const { locale } = useI18n();
   const { t } = useI18n();
+
+  const isRTL = computed(() => {
+  return locale.value === 'ar'; // 'ar' is the code for Arabic
+  });
   // About text
   const aboutText = t('about.description');
 

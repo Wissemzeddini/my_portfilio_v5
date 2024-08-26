@@ -11,7 +11,7 @@
         <img :src="blog.img" :alt="$t(blog.title)" />
         <div class="blog-text">
           <h4>{{ $t(blog.title) }}</h4>
-          <p>{{ $t(blog.description) }}</p>
+          <p :dir="isRTL ? 'rtl' : 'ltr'">{{ $t(blog.description) }}</p>
         </div>
       </div>
     </div>
@@ -19,6 +19,14 @@
 </template>
 
 <script lang="ts" setup>
+  import { ref, computed } from 'vue'
+  import { useI18n } from 'vue-i18n';
+
+  const { locale } = useI18n();
+
+  const isRTL = computed(() => {
+  return locale.value === 'ar'; // 'ar' is the code for Arabic
+  });
 // Import images
 import img1 from '@/assets/img/newswebsite.webp';
 import img2 from '@/assets/img/compare-price.jpg';

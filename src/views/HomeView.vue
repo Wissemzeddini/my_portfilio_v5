@@ -18,7 +18,7 @@
         </section>
       </main>
       <div class="controls">
-        <div class="control" @click="HandleSections('home')" :class="{ 'active-btn': activeSection === 'home' }" :dir="isRTL ? 'rtl' : 'ltr'">
+        <div class="control" @click="HandleSections('home')" :class="{ 'active-btn': activeSection === 'home' }">
           <i class="fas fa-home"></i>
         </div>
         <div class="control" @click="HandleSections('about')" :class="{ 'active-btn': activeSection === 'about' }" :dir="isRTL ? 'rtl' : 'ltr'">
@@ -36,7 +36,7 @@
       </div>
       <div class="lang-container">
         <div class="lang-btn" @click="toggleDropdown">
-          <i class="fa fa-globe"></i>
+          <i class="fas fa-globe-africa"></i>
         </div>
         <div v-if="isDropdownVisible" class="lang-dropdown">
           <ul>
