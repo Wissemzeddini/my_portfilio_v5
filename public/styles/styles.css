@@ -136,7 +136,7 @@ section {
 }
 
 .theme-btn {
-  top: 5%;
+  top: 4%;
   right: 3%;
   width: 70px;
   height: 70px;
@@ -159,7 +159,7 @@ section {
   pointer-events: none;
 }
 .lang-btn {
-  top: 7%;
+  top: 5%;
   right: 9%;
   width: 50px;
   height: 50px;
@@ -749,6 +749,12 @@ section {
     width: 50px;
     height: 50px;
   }
+  .lang-btn {
+    width: 40px;
+    height: 40px;
+    top: 4.8%;
+    right: 18%;
+  }
 
   .header-content {
     grid-template-columns: repeat(1, 1fr);
@@ -946,6 +952,10 @@ section {
   }
 }
 @media screen and (max-width: 970px) {
+  .lang-btn {
+    top: 5%;
+    right: 12%;
+  }
   .container {
     padding: 7rem 6rem;
   }
@@ -1065,3 +1075,10 @@ transition: 1s ease;
 }
 
 
+@media screen and (max-width: 400px) {
+  .lang-btn {
+    top: 4.8%;
+    right: 18%;
+  }
+
+}
