@@ -2,7 +2,8 @@
     <div class="btn-con" >
       <a 
       :href="cv_file" 
-      class="main-btn" 
+      class="main-btn"
+      id="download-cv"
       download="wissem_zeddini_cv" 
       target="_blank"
       rel="noopener noreferrer"
