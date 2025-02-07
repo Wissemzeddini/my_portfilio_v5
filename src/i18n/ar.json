@@ -62,5 +62,6 @@
     "subjectPlaceholder": "ادخل الموضوع",
     "messagePlaceholder": "اكتب رسالتك هنا...",
     "sendButton": "إرسال"
+    "successMessage":"لقد تم إرسال رسالتك"
   }
 }
