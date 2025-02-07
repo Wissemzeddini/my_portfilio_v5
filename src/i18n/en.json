@@ -62,6 +62,7 @@
     "subjectPlaceholder": "ENTER SUBJECT",
     "messagePlaceholder": "Message Here...",
     "sendButton": "Send"
+    "successMessage":"Your message has been submitted"
   }
 }
   
