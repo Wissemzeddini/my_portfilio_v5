@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="right-contact">
-        <form class="contact-form" netlify>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true>
           <div class="input-control i-c-2">
             <input type="text" required :placeholder="$t('contact.namePlaceholder')" name="name" />
             <input type="email" required :placeholder="$t('contact.emailPlaceholder')" name="email" />
