@@ -62,5 +62,6 @@
     "subjectPlaceholder": "ENTREZ LE SUJET",
     "messagePlaceholder": "Message ici...",
     "sendButton": "Envoyer"
+    "successMessage":"Votre message a été envoyé"
   }
 }
