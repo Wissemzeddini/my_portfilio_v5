@@ -27,16 +27,16 @@
         </div>
       </div>
       <div class="right-contact">
-        <form action="" class="contact-form">
+        <form action="" class="contact-form" netlify>
           <div class="input-control i-c-2">
-            <input type="text" required :placeholder="$t('contact.namePlaceholder')" />
-            <input type="email" required :placeholder="$t('contact.emailPlaceholder')" />
+            <input type="text" required :placeholder="$t('contact.namePlaceholder')" name="name" />
+            <input type="email" required :placeholder="$t('contact.emailPlaceholder')" name="email" />
           </div>
           <div class="input-control">
-            <input type="text" required :placeholder="$t('contact.subjectPlaceholder')" />
+            <input type="text" required :placeholder="$t('contact.subjectPlaceholder')" name="subject"/>
           </div>
           <div class="input-control">
-            <textarea name="" id="" cols="15" rows="8" :placeholder="$t('contact.messagePlaceholder')"></textarea>
+            <textarea name="message" id="" cols="15" rows="8" :placeholder="$t('contact.messagePlaceholder')"></textarea>
           </div>
           <button type="submit" class="sub-btn">{{ $t('contact.sendButton') }}</button>
         </form>
